@@ -24,7 +24,7 @@ int main() {
         position += velocity * dt;
         prev_error = error;
 
-        std::cout << "Step " << step + 1 << ": Position = " << position << std::endl;
+        // std::cout << "Step " << step + 1 << ": Position = " << position << std::endl;
     }
 
     return 0;

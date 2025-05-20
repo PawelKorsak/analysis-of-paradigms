@@ -52,7 +52,7 @@ int main() {
 
     for (int step = 0; step < s; ++step) {
         simulator.step(P_t, dt);
-        std::cout << "Step " << step + 1 << ": Position = " << simulator.get_position() << std::endl;
+        // std::cout << "Step " << step + 1 << ": Position = " << simulator.get_position() << std::endl;
     }
 
     return 0;

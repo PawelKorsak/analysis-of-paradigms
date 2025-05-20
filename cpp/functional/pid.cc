@@ -29,7 +29,7 @@ void simulate_pid(
     double new_position = current.position + new_velocity * dt;
     double new_integral = current.integral + error * dt;
 
-    std::cout << "Step " << step + 1 << ": Position = " << new_position << std::endl;
+    // std::cout << "Step " << step + 1 << ": Position = " << new_position << std::endl;
 
     State next = {new_position, new_velocity, new_integral, error};
     simulate_pid(next, target, mass, k_p, k_i, k_d, dt, step + 1, total_steps);
