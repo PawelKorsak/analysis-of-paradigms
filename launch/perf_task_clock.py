@@ -1,6 +1,7 @@
 # perf_task_clock.py
 import subprocess
 from typing import List, Union
+import time
 
 class PerfStatError(Exception):
     """Base exception for perf stat related errors"""
@@ -19,6 +20,9 @@ def get_task_clock_time(command: Union[str, List[str]]) -> float:
         PerfStatError: If any error occurs during execution or parsing
         FileNotFoundError: If perf is not installed
     """
+    # Give system some time to do other things
+    time.sleep(0.1)
+
     if isinstance(command, str):
         command = command.split()
         

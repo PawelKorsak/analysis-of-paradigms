@@ -88,7 +88,7 @@ if __name__ == '__main__':
     try:
         run_benchmark(
             output_file='cpp.csv',
-            runs=1000
+            runs=50
         )
     except Exception as e:
         print(f"Error: {str(e)}")
