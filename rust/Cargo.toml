@@ -1,0 +1,32 @@
+[dependencies]
+rand = "0.9"
+itertools = "0.10"
+
+[package]
+name = "analysis_of_paradigms"
+version = "1.0.0"
+edition = "2024"
+
+[[bin]]
+name = "functional_hash"
+path = "functional/hash.rs"
+
+[[bin]]
+name = "procedural_hash"
+path = "procedural/hash.rs"
+
+[[bin]]
+name = "functional_pid"
+path = "functional/pid.rs"
+
+[[bin]]
+name = "procedural_pid"
+path = "procedural/pid.rs"
+
+[[bin]]
+name = "functional_sorting"
+path = "functional/sorting.rs"
+
+[[bin]]
+name = "procedural_sorting"
+path = "procedural/sorting.rs"
